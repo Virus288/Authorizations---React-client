@@ -5,44 +5,48 @@
   "productName": "AuthorizationsClient",
   "author": "https://github.com/Virus288",
   "license": "Apache-2.0",
-  "private": false,
   "type": "module",
   "scripts": {
-    "start:dev": "vite --host",
-    "build": "tsc && vite build",
+    "start:dev": "vite",
+    "build": "tsc -b && vite build",
     "lint": "cross-env NODE_ENV=development eslint -c eslint.config.mjs . --fix",
-    "lintStaged": "npx lint-staged",
-    "listErrors": "node_modules/.bin/tsc --skipLibCheck"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "cross-env NODE_ENV=development eslint --cache"
-    ],
-    "*.json,.{eslintrc,prettierrc}": [
-      "prettier --ignore-path .eslintignore --parser json --write"
-    ]
+    "listErrors": "node_modules/.bin/tsc --skipLibCheck",
+    "lintStaged": "npx lint-staged"
   },
   "dependencies": {
-    "dotenv": "^16.4.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-hook-form": "^7.49.2",
-    "react-icons": "^5.1.0",
-    "react-query": "^3.39.3",
-    "react-router-dom": "^6.22.3",
-    "tailwind-merge": "^2.2.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.439.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "styled-components": "^6.1.13",
+    "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "@vitejs/plugin-react-swc": "^3.7.1",
-    "cross-env": "^7.0.3",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "@biomejs/biome": "1.8.3",
+    "@eslint/compat": "^1.2.2",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.9.0",
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/styled-components": "^5.1.34",
+    "@typescript-eslint/eslint-plugin": "8.12.2",
+    "@typescript-eslint/parser": "8.11.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "9.13.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-check-file": "2.8.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-jest": "28.8.3",
+    "eslint-plugin-jsdoc": "^50.0.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-sort-class-members": "1.21.0",
+    "globals": "^15.9.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
   }
 }
