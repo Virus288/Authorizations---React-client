@@ -1,7 +1,7 @@
 import React from 'react';
 import { HomeBody, HomeRow } from '../styled';
 import { Button } from '../../customs/buttons';
-import { sendToLoginPage, sendToRegisterPage } from '../../../controllers';
+import { sendToLoginPage, sendToRegisterPage, sendToLogoutPage } from '../../../controllers';
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +13,7 @@ const Home: React.FC = () => {
       <HomeRow>
         <Button onClick={() => sendToRegisterPage()}>Register</Button>
         <Button onClick={() => sendToLoginPage()}>Log in</Button>
+        <Button onClick={() => sendToLogoutPage()}>Log out</Button>
       </HomeRow>
     </HomeBody>
   );
