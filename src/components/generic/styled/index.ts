@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ContainerBody } from '../../customs/containers.ts';
+import { ContainerBody } from '../../customs/containers';
 import type { IContainerProps } from '../../../types';
 
 export const HomeBody = styled(ContainerBody)<IContainerProps>`
