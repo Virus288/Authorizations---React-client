@@ -185,7 +185,7 @@ export default [...fixupConfigRules(compat.extends(
         "no-constant-binary-expression": 0,
         "no-constant-condition": 2,
 
-        "no-console": [2, {
+        "no-console": [0, {
             allow: ["info", "trace"],
         }],
 
